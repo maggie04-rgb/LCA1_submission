@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body
+    style="
+      background-color: bisque;
+      font-family: 'Times New Roman', Times, serif;
+    "
+  >
+    <header>
+      <h1 style="text-align: center">
+        College work: forms, lists, semantic tags
+      </h1>
+      <nav style="background-color: aliceblue; text-align: center">
+        <a
+          href="www.linkedin.com/in/mrunal-kulkarni-80a849278"
+          style="margin: 150px"
+          >linkedin</a
+        >
+        <a href="blog.html">Blog</a>
+      </nav>
+      <h2 style="font-family: sans-serif; font-style: italic">hello!</h2>
+      <img
+        src="C:\Users\mihir\Pictures\19258.jpg"
+        alt="hands holding a bulb"
+        width="150"
+        height="150"
+      />
+    </header>
+    <article>
+      <p>
+        something something something some kind of text lorem ipsum dolor sit
+      </p>
+      <br />
+      <p>Please fill the following <mark>compulsory</mark>:</p>
+      <ul>
+        <li>Full name</li>
+        <li>College name</li>
+        <li>Birthdate</li>
+        <li>Gender</li>
+      </ul>
+      <br />
+      <br />
+      <form action="action_page.php" method="post">
+        <div>
+          <label for="fname">Full name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="enter full name"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="coll">College</label>
+          <input
+            type="text"
+            id="coll"
+            name="coll"
+            placeholder="enter college name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="bdate">Birth date</label>
+          <input type="date" id="bdate" name="bdate" />
+        </div>
+        <br />
+        <div>
+          <label for="gender">gender:</label>
+          <label for="male">male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female">female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="other">other</label>
+          <input type="radio" id="other" name="gender" value="other" />
+        </div>
+        <br />
+        <div>
+          <input type="reset" />
+        </div>
+        <br />
+        <div>
+          <input type="submit" />
+        </div>
+      </form>
+    </article>
+    <aside>
+      <a href="related.html">related post</a>
+      <img
+        src="C:\Users\mihir\Pictures\6367.jpg"
+        alt="brain illustration"
+        height="150"
+        width="150"
+      />
+    </aside>
+  </body>
+</html>

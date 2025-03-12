@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="icon"
+    type="icon"
+    href="D:\html css\college work\5503551-200.png"
+  />
+  <head>
+    <title>Form</title>
+    <style>
+      body {
+        background-color: bisque;
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: lightcoral;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: darkblue;
+        font-weight: bold;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid darkblue;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: darkblue;
+        color: white;
+      }
+
+      h2 {
+        color: darkslategray;
+        font-size: 1.5em;
+        text-align: left;
+      }
+
+      img {
+        border-radius: 50%;
+        border: 2px solid darkgray;
+      }
+
+      article {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px auto;
+        width: 70%;
+      }
+      blockquote {
+        font-style: italic;
+        border-left: 5px solid gray;
+        padding-left: 10px;
+      }
+
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: rgb(0, 0, 0);
+      }
+
+      form div {
+        margin-bottom: 15px;
+      }
+
+      form label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      form input[type="text"],
+      form input[type="date"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 80%;
+      }
+
+      form input[type="submit"],
+      form input[type="reset"] {
+        background-color: darkblue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      form input[type="submit"]:hover,
+      form input[type="reset"]:hover {
+        background-color: navy;
+      }
+      fieldset {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      legend {
+        font-weight: bold;
+        padding: 0 5px;
+        color: black;
+      }
+
+      table {
+        border-spacing: 0;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        width: 50%;
+        margin: 20px auto;
+        /* i have wtitten auto and specified my width thats why my table is center aligned*/
+        text-align: center;
+        font-family: Arial, sans-serif;
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        /*border: 1px solid black; */
+      }
+      th {
+        background-color: lightgray;
+      }
+
+      aside {
+        background-color: lightgoldenrodyellow;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      aside a {
+        color: darkred;
+        font-weight: bold;
+      }
+
+      aside a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">
+        College work: forms, lists, semantic tags
+      </h1>
+      <nav style="background-color: aliceblue; text-align: center">
+        <a
+          href="www.linkedin.com/in/mrunal-kulkarni-80a849278"
+          style="margin: 150px"
+          >linkedin</a
+        >
+        <a href="blog.html" target="_blank">Blog</a>
+      </nav>
+      <h2 style="font-family: sans-serif; font-style: italic">hello!</h2>
+      <img
+        src="C:\Users\mihir\Pictures\19258.jpg"
+        alt="hands holding a bulb"
+        width="150"
+        height="150"
+      />
+    </header>
+    <article>
+      <p>Here is a quote</p>
+      <blockquote cite="related.html">
+        <p>
+          <em
+            >"something <strong> something</strong> some kind of text lorem
+            ipsum dolor sit somthing something i love disney land"</em
+          ><br />
+          - maggie
+        </p>
+      </blockquote>
+      <br />
+      <p>to download this quote:</p>
+      <a href="related.html" download="quote.pdf">download quote</a>
+      <br />
+      <p>Please fill the following <mark>compulsory</mark>:</p>
+      <ul>
+        <li>Full name</li>
+        <li>College name</li>
+        <li>Birthdate</li>
+        <li>Gender</li>
+      </ul>
+      <br />
+      <br />
+      <form action="action_page.php" method="post">
+        <fieldset>
+          <!--use  fieldset before div-->
+          <legend>Personal Information</legend>
+          <div>
+            <label for="fname">Full name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="enter full name"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="coll">College</label>
+            <input
+              type="text"
+              id="coll"
+              name="coll"
+              placeholder="enter college name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="bdate">Birth date</label>
+            <input type="date" id="bdate" name="bdate" />
+          </div>
+          <br />
+          <div>
+            <label for="gender">gender:</label>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="other">other</label>
+            <input type="radio" id="other" name="gender" value="other" />
+          </div>
+          <br />
+          <div>
+            <input type="reset" />
+          </div>
+          <br />
+          <div>
+            <input type="submit" />
+          </div>
+        </fieldset>
+      </form>
+      <table class="marks">
+        <tr>
+          <th>name</th>
+          <th>prn</th>
+          <th>marks</th>
+        </tr>
+        <tr>
+          <td>mrunal</td>
+          <td>123456</td>
+          <td>100/100</td>
+        </tr>
+        <tr>
+          <td>Harshita</td>
+          <td>456789</td>
+          <td>20/100</td>
+        </tr>
+      </table>
+    </article>
+    <aside>
+      <a href="related.html">related post</a>
+      <img
+        src="C:\Users\mihir\Pictures\6367.jpg"
+        alt="brain illustration"
+        height="150"
+        width="150"
+      />
+    </aside>
+  </body>
+</html>
